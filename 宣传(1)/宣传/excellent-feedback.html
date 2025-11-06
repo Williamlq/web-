@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>优秀反馈展示</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* 新增页面专属样式（复用主页面结构，仅微调） */
+        .feedback-category {
+            margin: 30px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+        .feedback-item {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .feedback-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            color: #666;
+            font-size: 14px;
+        }
+        .feedback-author {
+            font-weight: bold;
+            color: #4CAF50; /* 匿名作者用绿色标识 */
+        }
+        .feedback-content {
+            line-height: 1.8;
+            margin: 15px 0;
+        }
+        .feedback-tag {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            color: white;
+            margin-right: 8px;
+        }
+        .tag-creative {
+            background: #2196F3; /* 优秀投稿标签-蓝色 */
+        }
+        .tag-suggestion {
+            background: #FF9800; /* 已解决建议标签-橙色 */
+        }
+        .feedback-image {
+            max-width: 100%;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .back-home {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 8px 20px;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .back-home:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <!-- 复用主页面头部，保持风格统一 -->
+        <h1><img src="images/top.png" alt=""> Biuh Campus Pulse: Feedback ＆ Feature</h1>
+    </div>
+    
+    <div class="box">
+        <h3>优秀反馈展示</h3>
+        <p>以下为匿名化处理后的优秀投稿与已解决建议，感谢每一位同学的积极参与！</p>
+        
+        <!-- 优秀投稿分类 -->
+        <h4 class="feedback-category">
+            <span class="feedback-tag tag-creative">优秀投稿</span>
+        </h4>
+        
+        <!-- 投稿项1 -->
+        <div class="feedback-item">
+            <div class="feedback-header">
+                <span class="feedback-author">匿名用户</span>
+                <span>提交时间：2025-10-15</span>
+            </div>
+            <div class="feedback-content">
+                <p>建议校园增设“共享学习角”，在教学楼走廊、图书馆大厅等区域放置可移动桌椅和充电接口，方便同学们临时讨论、小组协作。同时可配备简易储物柜，存放个人物品。</p>
+            </div>
+            <img src="images/creative1.jpg" alt="共享学习角设计图" class="feedback-image">
+            <p><strong>管理员回复：</strong>你的创意已被采纳！后勤部门已在3号教学楼和图书馆2楼试点设置共享学习角，配备了可折叠桌椅和USB充电口，后续将根据使用情况逐步推广到其他区域。</p>
+        </div>
+        
+        <!-- 投稿项2 -->
+        <div class="feedback-item">
+            <div class="feedback-header">
+                <span class="feedback-author">某专业同学</span>
+                <span>提交时间：2025-10-08</span>
+            </div>
+            <div class="feedback-content">
+                <p>设计了校园文化周边——“比科大专属书签”，结合学校校徽和德国元素，采用环保木材制作，正面印校徽，背面可定制专业名称。既实用又能体现校园文化，可作为招生礼品或学生纪念品。</p>
+            </div>
+            <img src="images/creative2.jpg" alt="校园书签设计图" class="feedback-image bookmark">
+            <p><strong>管理员回复：</strong>书签设计非常精美！已联系校园文创店制作首批样品，将于11月中旬在校园超市上架销售， proceeds 将用于支持学生创意项目孵化。</p>
+        </div>
+        
+        <!-- 已解决建议分类 -->
+        <h4 class="feedback-category">
+            <span class="feedback-tag tag-suggestion">已解决建议</span>
+        </h4>
+        
+        <!-- 建议项1 -->
+        <div class="feedback-item">
+            <div class="feedback-header">
+                <span class="feedback-author">匿名用户</span>
+                <span>提交时间：2025-09-22</span>
+            </div>
+            <div class="feedback-content">
+                <p>图书馆电子资源检索系统操作复杂，很多同学找不到需要的文献，建议优化检索界面，增加“热门资源推荐”“专业分类导航”，并添加使用教程视频链接。</p>
+            </div>
+            <p><strong>处理进度：</strong>已完成优化（2025-10-10）</p>
+            <p><strong>管理员回复：</strong>感谢你的建议！图书馆已对电子资源系统进行升级，新增了专业分类导航和热门资源推荐模块，在首页添加了详细的使用教程视频，同时每周三下午将开展线下使用培训，欢迎参加。</p>
+        </div>
+        
+        <!-- 建议项2 -->
+        <div class="feedback-item">
+            <div class="feedback-header">
+                <span class="feedback-author">某班级同学</span>
+                <span>提交时间：2025-09-15</span>
+            </div>
+            <div class="feedback-content">
+                <p>校园食堂晚餐供应时间较短（17:30-19:00），对于有晚课的同学来说时间紧张，建议将晚餐供应时间延长至20:00，并增加几款快速加热的便捷餐品（如便当、饭团）。</p>
+            </div>
+            <p><strong>处理进度：</strong>已实施（2025-09-30）</p>
+            <p><strong>管理员回复：</strong>食堂已调整晚餐供应时间为17:00-20:30，同时在3号窗口增设了“便捷餐品区”，提供加热便当、饭团、三明治等快速餐品，满足晚课同学的就餐需求。</p>
+        </div>
+        
+        <!-- 返回主页面按钮 -->
+        <a href="index.html" class="back-home">返回主页面</a>
+    </div>
+    
+        <div class="footer">
+            <p>© 2025 建议投稿. All rights reserved.</p>
+            <p>
+                关注我们: <a href="#">微信公众号</a> | <a href="feedback-status.html">反馈进度查询</a>
+            </p>
+        </div>
+</body>
+</html>
